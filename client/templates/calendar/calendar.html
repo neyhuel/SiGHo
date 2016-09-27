@@ -1,0 +1,40 @@
+<template name="calendar">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">Domingo</th>
+        <th class="text-center">Lunes</th>
+        <th class="text-center">Martes</th>
+        <th class="text-center">Miercoles</th>
+        <th class="text-center">Jueves</th>
+        <th class="text-center">Viernes</th>
+        <th class="text-center">Sabado</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each rows}}
+        {{> fila}}
+      {{/each}}
+    </tbody>
+  </table>
+</template>
+
+<template name="fila">
+  <tr>
+    {{#each columns}}
+      {{> columna}}
+    {{/each}}
+
+  </tr>
+</template>
+
+<template name="columna">
+  <td class="{{disable}} {{active_day}}">
+    <h6 class="text-right">{{dia}}/{{mes}}</h6>
+    <ul class="list-group">
+      <li class="text-center list-group-item list-group-item-info">09:20:00</li>
+      <li class="text-center list-group-item list-group-item-info">17:20:00</li>
+      <li class="text-center list-group-item list-group-item-success">08:00:00</li>
+    </ul>
+  </td>
+</template>

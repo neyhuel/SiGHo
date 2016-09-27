@@ -1,1 +1,24 @@
 /* CSS declarations go here */
+.bg-default{
+	color: #999999 !important;
+	background: #ddd;
+}
+
+.bg-default li{
+	color: #999999 !important;
+	background: #ccc !important;
+}
+
+h6{
+	margin-top: 0;
+}
+
+ul{
+	margin-bottom: 0 !important;
+}
+
+.list-group-item{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: none !important;
+}
